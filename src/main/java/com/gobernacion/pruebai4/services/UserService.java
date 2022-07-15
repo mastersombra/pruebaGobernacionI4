@@ -105,7 +105,7 @@ public class UserService {
 
     int num = (number >= 0) && (number < 60) ? 1 : 4;
     num = (number >= 60) && (number <= 70) ? 2 : num;
-    num = (number > 60) && (number <= 100) ? 3 : num;
+    num = (number > 70) && (number <= 100) ? 3 : num;
 
     return num;
   }
@@ -116,25 +116,6 @@ public class UserService {
    * @return
    */
   public double fatRisk(double number) {
-
-    // switch (true) {
-    //   case (number > 88.5 && number <= 100):
-    //     number = 1;
-    //     break;
-
-    //   case (number >= 62.2 && number <= 88.5):
-    //     number = 2;
-    //     break;
-
-    //   case (number < 62.2 && number >= 0):
-    //     number = 3;
-    //     break;
-
-    //   default:
-    //     number = 4;
-    //     break;
-    // }
-
     
     if (number > 88.5 && number <= 100) {
       number = 1;
