@@ -51,16 +51,13 @@ public class UserService {
     }
 
     user.setRisk(riskCalculated);
-System.out.println(user.getRisk());
     switch (riskCalculated) {
       case "Error":
         user.setRisk("Error: El valor debe estar entre 0-100");
-        System.out.println(user.getRisk());
         return user;
 
       case "SinRango":
         user.setRisk("Los valores no se ajustan a ningún rango");
-        System.out.println(user.getRisk());
         return user;
 
       default:
